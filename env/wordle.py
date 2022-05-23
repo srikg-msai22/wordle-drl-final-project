@@ -8,11 +8,11 @@ import numpy as np
 import env.state
 from env.const import WORDLE_N, REWARD
 
-CUR_PATH = os.environ.get('PYTHONPATH', '.')
 import os
+CUR_PATH = os.environ.get('PYTHONPATH', '.')
 
 dirname = os.path.dirname(__file__)
-VALID_WORDS_PATH = f'{dirname}/../../data/wordle_words.txt'
+VALID_WORDS_PATH = f'{dirname}/../data/words.txt'
 
 
 def _load_words(limit: Optional[int] = None) -> List[str]:

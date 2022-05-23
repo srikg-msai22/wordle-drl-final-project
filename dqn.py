@@ -15,8 +15,8 @@ from pytorch_lightning import Trainer, LightningModule
 from pytorch_lightning.callbacks.model_checkpoint import ModelCheckpoint
 from pytorch_lightning.callbacks import Callback
 
-import dqn
-from drl_models.dqn.agent import Agent
+import drl_models.dqn
+from drl_models.dqn.agent import Agent1
 from drl_models.dqn.experience import SequenceReplay, RLDataset, Experience
 
 import env.state
@@ -79,9 +79,9 @@ class DQNLightning(LightningModule):
 
         print("dqn:", self.env.spec.id, self.env.spec.max_episode_steps, n_actions, obs_size)
 
-        self.net = dqn.construct(
+        self.net = drl_models.dqn.construct(
             self.hparams.deep_q_network, obs_size=obs_size, n_actions=n_actions, hidden_size=hidden_size, word_list=self.env.words)
-        self.target_net = dqn.construct(
+        self.target_net = drl_models.dqn.construct(
             self.hparams.deep_q_network, obs_size=obs_size, n_actions=n_actions, hidden_size=hidden_size, word_list=self.env.words)
 
         self.dataset = RLDataset(
@@ -89,7 +89,7 @@ class DQNLightning(LightningModule):
             losers=SequenceReplay(self.hparams.replay_size//2),
             sample_size=self.hparams.episode_length)
 
-        self.agent = Agent(self.net, self.env.action_space)
+        self.agent = Agent1(self.net, self.env.action_space)
         self.state = self.env.reset()
         self.total_reward = 0
         self.episode_reward = 0
@@ -150,7 +150,7 @@ class DQNLightning(LightningModule):
             reward = exp.reward
             cur_seq.append(exp)
 
-        winning_steps = self.env.max_turns - wordle.state.remaining_steps(self.state)
+        winning_steps = self.env.max_turns - env.state.remaining_steps(self.state)
         if reward > 0:
             self.dataset.winners.append(cur_seq)
         else:

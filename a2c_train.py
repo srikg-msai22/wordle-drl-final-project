@@ -19,7 +19,7 @@ def cli_main() -> None:
     parser = AdvantageActorCritic.add_model_specific_args(parser)
     args = parser.parse_args()
 
-    with wandb.init(project='wordle-solver'):
+    with wandb.init(project="test-project", entity="wordle-drl-final-project"):
         wandb.config.update(args)
 
         model = AdvantageActorCritic(**args.__dict__)

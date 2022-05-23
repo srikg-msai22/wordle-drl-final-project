@@ -6,11 +6,11 @@ from torch import nn
 import gym
 
 from env import wordle
-from dqn.experience import SequenceReplay, Experience
+from drl_models.dqn.experience import SequenceReplay, Experience
 from env.state import WordleState
 
 
-class Agent:
+class Agent1:
     def __init__(self,
                  net: nn.Module,
                  action_space: Any):
