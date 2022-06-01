@@ -1,8 +1,8 @@
-numpy~=1.22.3
-typing~=3.7.4.3
-gym~=0.23.1
-pytest~=7.1.2
-fire~=0.4.0
-torch~=1.11.0
-wandb~=0.12.16
-argparse~=1.4.0
+numpy
+typing
+gym
+pytest
+fire
+torch
+wandb
+argparse
