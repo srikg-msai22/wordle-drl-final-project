@@ -31,16 +31,16 @@ We tried the following methods:
 
 1. **Deep Q learning:** 
 
-Q-learning is a values-based reinforcement learning algorithm which updates the value function based on the Bellman equation. Deep Q-Learning uses experience replay to learn the value function in small batches, so that the agent doesn't need to re-train after each step.
+  Q-learning is a values-based reinforcement learning algorithm which updates the value function based on the Bellman equation. Deep Q-Learning uses experience replay to learn the value function in small batches, so that the agent doesn't need to re-train after each step.
 
-In our case, we have used the learnt embeddings for the encoded words as the predicted Q-value of taking an action for a given state.
+  In our case, we have used the learnt embeddings for the encoded words as the predicted Q-value of taking an action for a given state.
 
 
 3. **Advantage Actor Critic (A2C):**
 
-“Actor-Critic” is a class of algorithms that satisfy the criteria that there exists parameterized actors and critics. The actor is the policy while the critic computes the value function to assist the actor in learning.
+  “Actor-Critic” is a class of algorithms that satisfy the criteria that there exists parameterized actors and critics. The actor is the policy while the critic computes the value function to assist the actor in learning.
 
-In our case, we have trained the network to solve the problem sequentially increasing the complexity by increasing the vocabulary size.
+  In our case, we have trained the network to solve the problem sequentially increasing the complexity by increasing the vocabulary size.
 
 
 ## Implementation choices
