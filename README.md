@@ -45,6 +45,10 @@ We tried the following methods:
 
 ## Implementation choices
 
+The state vector is an integer vector of size 417, one for the number of remaining turns, and the rest to represent the state. The neural network takes this vector as input, feeds it through an MLP with some hidden layers to an output layer of size 130. Because the output word has a fixed size (5), the vocabulary is one-hot encoded to get a 130-wide one-hot representation for the word (26*5).
+
+
+
 ## Future work
 
 In the future, we want to extend this work to be able to solve more complex versions of Wordle, namely:
