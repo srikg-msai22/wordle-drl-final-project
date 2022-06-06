@@ -2,6 +2,8 @@
 
 Github link: https://github.com/srikg-msai22/wordle-drl-final-project
 
+Inspiration and reference from: https://wandb.ai/andrewkho/wordle-solver/reports/Solving-Wordle-with-Reinforcement-Learning--VmlldzoxNTUzOTc4
+
 ## Introduction
 
 Wordle is a game now owned by New York Times which was created by Josh Wardle in 2013. The prototype was dusted off for the pandemic and since then has steadily gained popularity. The rules are simple; the user has 6 chances in a day to guess a 5 letter word and for every guess the game tells you whether each letter in the guess exists in the goal word.
