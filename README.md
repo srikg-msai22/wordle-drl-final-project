@@ -67,9 +67,11 @@ For the A2C model, we used a learning rate of 1e-4, a batch_size of 64, replay_s
 
 From the 2 models, A2C showed better results with an average win rate of 92.5% (accuracy).
 
+<img width="834" alt="image" src="https://user-images.githubusercontent.com/91037549/172090405-1ab8b298-4f4c-45fb-b748-1c49adebe286.png">
+
 Following are the graphs for our best performing run of A2C:
 
-<img width="834" alt="image" src="https://user-images.githubusercontent.com/91037549/172090405-1ab8b298-4f4c-45fb-b748-1c49adebe286.png">
+
 
 <img width="1347" alt="image" src="https://user-images.githubusercontent.com/91037549/172090489-e74f85c2-4db4-44f1-a0b2-cc0a96835d9e.png">
 <img width="905" alt="image" src="https://user-images.githubusercontent.com/91037549/172090515-3ebe1a97-236a-42be-886f-c4e7abe4f0b0.png">
