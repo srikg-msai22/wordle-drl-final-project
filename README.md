@@ -73,9 +73,7 @@ Following are the graphs for our best performing run of A2C:
 
 
 
-<img width="1344" alt="image" src="https://user-images.githubusercontent.com/91037549/172091452-5dd91eb3-cbce-40df-8758-56001d867bbb.png">
-<img width="1341" alt="image" src="https://user-images.githubusercontent.com/91037549/172091477-f35c7c18-13ce-4f9d-b3a4-b7416f1340d4.png">
-
+<img width="1347" alt="image" src="https://user-images.githubusercontent.com/91037549/172090489-e74f85c2-4db4-44f1-a0b2-cc0a96835d9e.png">
 <img width="456" alt="image" src="https://user-images.githubusercontent.com/91037549/172091139-1614cc4f-287d-4915-bc90-8c9a5fd227c4.png">
 
 
@@ -94,7 +92,8 @@ In the future, we want to extend this work to be able to solve more complex vers
 
 4. We could also extend this code to solve Quordle, another game inspired by Wordle where the user has to guess 4 words at the same time in 8 tries. 
 
-
+## Future work
+> https://andrewkho.github.io/wordle-solver/
 
 
 
