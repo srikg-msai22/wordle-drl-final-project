@@ -2,7 +2,7 @@
 
 Github link: https://github.com/srikg-msai22/wordle-drl-final-project
 
-Inspiration and reference from: https://wandb.ai/andrewkho/wordle-solver/reports/Solving-Wordle-with-Reinforcement-Learning--VmlldzoxNTUzOTc4
+
 
 ## Introduction
 
@@ -98,5 +98,8 @@ In the future, we want to extend this work to be able to solve more complex vers
 
 
 
+Inspiration and reference from:
 
+https://wandb.ai/andrewkho/wordle-solver/reports/Solving-Wordle-with-Reinforcement-Learning--VmlldzoxNTUzOTc4
+https://andrewkho.github.io/wordle-solver/
 
