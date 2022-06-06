@@ -21,7 +21,7 @@ For this project, we want to train an agent using model-based approaches to solv
 
 The data is the list of 12972 5-letter words from the Wordle dictionary. 
 
-The tech stack includes Pytorch modules, Colab IDE, Weights and Biases (for logging).
+The tech stack includes Pytorch modules, PyTorch Lightning module, Colab IDE, Weights and Biases (for logging).
 
 ## Methodology
 
@@ -51,7 +51,7 @@ This is essentially constraining the value of each word, given an input state, t
 
 We experimented with the following hyperparameters for the DQN algorithm:
 
-1. max_epochs: We tried values in the range of 100 to 5000 and settled on 5000 as the final value for max_epochs to give the agent enough runs to learn from
+1. max_epochs: We tried values in the range of 500 to 5000 and settled on 5000 as the final value for max_epochs to give the agent enough runs to learn from
 
 2. replay_size: We tried values between 100 and 1000 and our final value was 1000
 
