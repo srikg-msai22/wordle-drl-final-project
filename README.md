@@ -38,7 +38,7 @@ We tried the following methods:
   In our case, we have used the learnt embeddings for the encoded words as the predicted Q-value of taking an action for a given state.
 
 
-3. **Advantage Actor Critic (A2C):**
+2. **Advantage Actor Critic (A2C):**
 
   “Actor-Critic” is a class of algorithms that satisfy the criteria that there exists parameterized actors and critics. The actor is the policy while the critic computes the value function to assist the actor in learning.
 
