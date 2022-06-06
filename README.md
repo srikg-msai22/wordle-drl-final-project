@@ -19,4 +19,43 @@ For this project, we want to train an agent using model-based approaches to solv
 
 ## Data and Tech Stack
 
-The data is the list of 12972 5-letter words from the Wordle dictionary. Pytorch modules, Colab IDE.
+The data is the list of 12972 5-letter words from the Wordle dictionary. 
+
+The tech stack includes Pytorch modules, Colab IDE, Weights and Biases (for logging).
+
+## Methodology
+
+Existing approaches to solve Wordle are mainly focused on information theory. Tgus project is focused on using Deep Reinforcement Learning to solve this problem. 
+
+We tried the following methods:
+
+1. **Deep Q learning:** 
+
+Q-learning is a values-based reinforcement learning algorithm which updates the value function based on the Bellman equation. Deep Q-Learning uses experience replay to learn the value function in small batches, so that the agent doesn't need to re-train after each step.
+
+In our case, we have used the learnt embeddings for the encoded words as the predicted Q-value of taking an action for a given state.
+
+
+3. **Advantage Actor Critic (A2C):**
+
+“Actor-Critic” is a class of algorithms that satisfy the criteria that there exists parameterized actors and critics. The actor is the policy while the critic computes the value function to assist the actor in learning.
+
+In our case, we have trained the network to solve the problem sequentially increasing the complexity by increasing the vocabulary size.
+
+
+## Implementation choices
+
+## Future work
+
+In the future, we want to extend this work to be able to solve more complex versions of Wordle, namely:
+
+1. Extending the code so that the agent can how to solve Wordle for 6-letter words. We will require a bigger dataset of 6-letter words and adding new constraints for the agent to learn from. We would also like to determine the best 6-letter word to start guessing with, as a result.
+
+2. Extending the code so that the agent can learn to guess a variable-length word, mimicking the game Semantle. We would require a much larger dataset and many more constraints for the agent to guess the word correctly. 
+
+3. We could also extend this code to solve Quordle, another game inspired by Wordle where the user has to guess 4 words at the same time in 8 tries. 
+
+
+
+
+
