@@ -28,7 +28,7 @@ The tech stack includes Pytorch modules, PyTorch Lightning module, Colab IDE, We
 
 ## Methodology
 
-Existing approaches to solve Wordle are mainly focused on information theory. Tgus project is focused on using Deep Reinforcement Learning to solve this problem. 
+Existing approaches to solve Wordle are mainly focused on information theory. This project is focused on using Deep Reinforcement Learning to solve this problem. 
 
 We tried the following methods:
 
