@@ -1,5 +1,6 @@
 # wordle-drl-final-project
 
+> Clarissa Cheam, Devyani Gauri, Kavya J, Srik G
 Github link: https://github.com/srikg-msai22/wordle-drl-final-project
 
 
