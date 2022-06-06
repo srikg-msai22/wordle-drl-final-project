@@ -74,7 +74,8 @@ Following are the graphs for our best performing run of A2C:
 
 
 <img width="1347" alt="image" src="https://user-images.githubusercontent.com/91037549/172090489-e74f85c2-4db4-44f1-a0b2-cc0a96835d9e.png">
-<img width="905" alt="image" src="https://user-images.githubusercontent.com/91037549/172090515-3ebe1a97-236a-42be-886f-c4e7abe4f0b0.png">
+<img width="456" alt="image" src="https://user-images.githubusercontent.com/91037549/172091139-1614cc4f-287d-4915-bc90-8c9a5fd227c4.png">
+
 
 
 
